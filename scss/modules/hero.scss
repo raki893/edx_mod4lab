@@ -1,0 +1,64 @@
+/****** Hero Modules ******/
+
+.hero {
+    text-align: center;
+  }
+  .hero-primary {
+    background-color: #594a42;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @include small-and-above {
+      padding-top: 150px;
+    }
+  }
+  .hero-primary.bg-image > img {
+    opacity: 0.55;
+  }
+  .hero-body {
+    position: relative;
+  }
+  
+  .hero-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 2.625em;
+  }
+  .hero-subtitle {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.500em;
+    font-weight: normal;
+  }
+  .hero-subtitle + button {
+    margin-top: 25px;
+  }
+  
+  .hero-body > button{
+    background: none;
+    border: 1pt solid white;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 30px 15px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.750em;
+  }
+  .hero-body > button:hover {
+    background: white;
+    color: #39B54A;
+  }
+
+  @media (min-width: 48em) {
+    .pull-right-sm {
+      float:right;
+    }
+  }
+  
+  @media only screen and (max-width : 47.9375em) {
+    .remove-gutter-xs {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
