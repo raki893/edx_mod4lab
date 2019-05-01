@@ -507,7 +507,7 @@ pixel so that the next media query mixin will not overlap*/
 /* mixin for devices small and above */
 /****** Header Modules ******/
 .header-primary {
-  background: #9B8579;
+  background: none;
   text-align: center;
   padding-top: 18px;
   padding-bottom: 18px; }
