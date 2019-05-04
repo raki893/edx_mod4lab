@@ -774,3 +774,20 @@ pixel so that the next media query mixin will not overlap*/
 
 .feature-title > h1 + p {
   text-align: left; }
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 10px 35px;
+  height: 50px;
+  line-height: 30px;
+  background: #8DC63F;
+  z-index: 100; }
+
+.tag ::after {
+  box-sizing: inherit; }
+
+.hero-featured {
+  border-top: 4px solid #8DC63F; }
