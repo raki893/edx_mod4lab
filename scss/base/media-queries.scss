@@ -1,4 +1,5 @@
 $mq-1: 48em !default; /* 768px / 16px = 48em */
+$mq-2: 62em !default; 
 
 /* mixin will apply only to extra small devices ------B y subtracting 0.0625 from 
 your mq-1 variable, you are basically removing a pixel. You remove the 
@@ -14,4 +15,10 @@ pixel so that the next media query mixin will not overlap*/
   @media only screen and (min-width : $mq-1) {
       @content;
   }
+}
+
+@mixin medium-and-above {
+    @media only screen and (min-width : $mq-2){
+        @content;
+    }
 }
