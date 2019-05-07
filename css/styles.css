@@ -701,7 +701,7 @@ pixel so that the next media query mixin will not overlap*/
 
 .media-body > p {
   font-family: Arial, Helvetica, sans-serif;
-  text-justify: left;
+  text-align: left;
   font-size: 1em;
   margin-bottom: 40px; }
 
