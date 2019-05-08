@@ -11,3 +11,12 @@
     display: -webkit-flex;
     display: flex;
 }
+
+/*The attribute flex: is a combination of flex-grow, flex-shrink, and flex-basis. The default is flex: 0 1 auto;. */
+@mixin flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex:  $values;
+    -webkit-flex:  $values;
+    -ms-flex:  $values;
+    flex:  $values;
+}
