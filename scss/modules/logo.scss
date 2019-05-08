@@ -8,11 +8,17 @@
   .logo-primary {
     width: 64px;
     height: 64px;
+
     @include small-and-above {
       width:auto;
       height:50px;
       margin-right: auto;  /*In a Flexbox container, a margin set to auto will absorb the extra space. This is why the logo pulls to the left side of the container. */
     }
+
+    @include extra-small-only {
+      margin: 0 auto;
+    }
+
   }
   
   .logo-primary img {

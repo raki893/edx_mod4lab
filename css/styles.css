@@ -571,6 +571,9 @@ pixel so that the next media query mixin will not overlap*/
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; }
+    @media only screen and (max-width: 47.9375em) {
+      .header-primary .container {
+        flex-direction: column; } }
 
 /* 768px / 16px = 48em */
 /* mixin will apply only to extra small devices ------B y subtracting 0.0625 from 
@@ -591,6 +594,9 @@ pixel so that the next media query mixin will not overlap*/
       height: 50px;
       margin-right: auto;
       /*In a Flexbox container, a margin set to auto will absorb the extra space. This is why the logo pulls to the left side of the container. */ } }
+  @media only screen and (max-width: 47.9375em) {
+    .logo-primary {
+      margin: 0 auto; } }
 
 .logo-primary img {
   height: 100%; }
@@ -651,6 +657,9 @@ pixel so that the next media query mixin will not overlap*/
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 1.750em; }
+  @media only screen and (max-width: 47.9375em) {
+    .hero-body > button {
+      padding: 15px 15px 15px 15px; } }
 
 .hero-body > button:hover {
   background: white;

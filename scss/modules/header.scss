@@ -24,5 +24,9 @@
 
   .container{
     @include flexbox-display();
+    @include extra-small-only{
+      flex-direction: column;
+
+    }
   }
 }
