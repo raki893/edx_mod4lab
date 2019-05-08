@@ -1,4 +1,5 @@
 @import "../base/media-queries.scss";
+@import "../base/mixins.scss";
 /****** Header Modules ******/
 
 .header-primary{
@@ -19,5 +20,9 @@
         clear: both;
         
       }
+  }
+
+  .container{
+    @include flexbox-display();
   }
 }

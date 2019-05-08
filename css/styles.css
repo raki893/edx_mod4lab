@@ -521,6 +521,12 @@ pixel so that the next media query mixin will not overlap*/
         content: "";
         display: table;
         clear: both; } }
+  .header-primary .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
 
 /* 768px / 16px = 48em */
 /* mixin will apply only to extra small devices ------B y subtracting 0.0625 from 
@@ -539,7 +545,8 @@ pixel so that the next media query mixin will not overlap*/
     .logo-primary {
       width: auto;
       height: 50px;
-      float: left; } }
+      margin-right: auto;
+      /*In a Flexbox container, a margin set to auto will absorb the extra space. This is why the logo pulls to the left side of the container. */ } }
 
 .logo-primary img {
   height: 100%; }
@@ -554,9 +561,6 @@ pixel so that the next media query mixin will not overlap*/
   margin-top: 28px; }
   @media only screen and (min-width: 48em) {
     .nav-primary {
-      float: right;
-      width: 60%;
-      text-align: right;
       margin-top: 0px; }
       .nav-primary li {
         display: inline-block; } }
