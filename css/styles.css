@@ -747,12 +747,17 @@ pixel so that the next media query mixin will not overlap*/
     width: 100%; }
   @media only screen and (min-width: 48em) {
     .frame-primary {
-      width: 355px;
-      height: 355px;
-      border-radius: 177.5px;
+      width: 230px;
+      height: 230px;
+      border-radius: 115px;
       position: relative;
       top: -30px;
       margin: 0 auto 63px auto; } }
+  @media only screen and (min-width: 62em) {
+    .frame-primary {
+      width: 310px;
+      height: 310px;
+      border-radius: 155px; } }
 
 .mask {
   position: relative; }
