@@ -31,8 +31,7 @@ Layout Styles
   }
   
   .footer-divider{
-    width: 100%;
-    border-bottom: 1px solid $dark-brown;
+    color: $tan;
   }
 
   /* Media Query excludes extra small devices and includes small and above */
@@ -98,6 +97,12 @@ Layout Styles
       /* Column Half */
       .col-1-2 {
         @include flex(0 1 50%);
+      }
+      .col-1-4 {
+        @include flex(0 1 25%);
+      }
+      .col-1-6 {
+        @include flex(0 1 16.6666%);
       }
     }
   }

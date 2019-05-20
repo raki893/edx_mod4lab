@@ -429,8 +429,7 @@ Layout Styles
   padding-right: 15px; }
 
 .footer-divider {
-  width: 100%;
-  border-bottom: 1px solid #594a42; }
+  color: #e7e1d7; }
 
 /* Media Query excludes extra small devices and includes small and above */
 @media only screen and (min-width: 48em) {
@@ -481,6 +480,18 @@ Layout Styles
         -webkit-flex: 0 1 50%;
         -ms-flex: 0 1 50%;
         flex: 0 1 50%; }
+      .flexbox-sm .col-2-3 .col-1-4 {
+        -webkit-box-flex: 0 1 25%;
+        -moz-box-flex: 0 1 25%;
+        -webkit-flex: 0 1 25%;
+        -ms-flex: 0 1 25%;
+        flex: 0 1 25%; }
+      .flexbox-sm .col-2-3 .col-1-6 {
+        -webkit-box-flex: 0 1 16.6666%;
+        -moz-box-flex: 0 1 16.6666%;
+        -webkit-flex: 0 1 16.6666%;
+        -ms-flex: 0 1 16.6666%;
+        flex: 0 1 16.6666%; }
   .flexbox-sm-row-reverse {
     -webkit-flex-direction: row-reverse;
     /* Safari 6.1+ */
@@ -854,3 +865,9 @@ pixel so that the next media query mixin will not overlap*/
 
 .hero-featured {
   border-top: 4px solid #8DC63F; }
+
+/************************ Footer Modules ***********************/
+.footer-primary {
+  background: #594a42;
+  color: #C2B59B;
+  padding-top: 20px; }
